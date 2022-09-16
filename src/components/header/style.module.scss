@@ -1,0 +1,14 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.564);
+    text-align: center;
+    padding: 20px  0px  20px 0px;
+    backdrop-filter: blur(10px);
+    .header_image{
+        margin: auto;
+        width: 20%;
+    }
+    .header_title{
+        color: #fff;
+    }
+}
+

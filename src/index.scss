@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Aboreto', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(0, 0, 0);
+  &::-webkit-scrollbar {
+    width: 16px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgb(223, 31, 31);
+  }
+}
+body::after {
+  content: "";
+  background: url("./assets/page1.jpg");
+  opacity: 0.15;
+  background-size: auto;
+  background-repeat: repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+

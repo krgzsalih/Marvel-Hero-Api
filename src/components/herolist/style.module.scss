@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 87%;
+    margin: auto;
+}
+.loading{
+    color: #fff;
+    text-align: center;
+    margin: 10rem;
+    font-size: 3rem;
+}
+.listLoading{
+    text-align: center;
+    width: 92%;
+    font-size: 1.7rem;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.71);
+}

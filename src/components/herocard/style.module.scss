@@ -1,0 +1,59 @@
+.card {
+    margin: 28px;
+    background: rgba(0, 0, 0, 0.503);
+    backdrop-filter: blur(10px);
+    width: 230px;
+    height: 450px;
+    border: 3px solid rgba(0, 0, 0, 0.492);
+    margin-bottom: 60px;
+    background-clip: content-box;
+    transition: 0.1s all ease-in-out;
+    overflow: hidden;
+    &:hover {
+        cursor: pointer;
+        border-bottom: 3px solid rgba(255, 255, 255, 0);
+        -webkit-box-shadow: inset -1px 58px 17px 2px rgba(240, 240, 240, 0.703);
+        -moz-box-shadow: inset -1px 58px 17px 2px rgba(240, 240, 240, 0.703);
+        box-shadow: inset -1px 58px 17px 2px rgba(240, 240, 240, 0.703);
+        overflow: visible;
+        text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77, 0, 38, 0.5), 3px 0 3px #ff002b, 5px 0 3px #800015,
+                    6px 2px 3px rgba(77, 0, 13, 0.5), 6px 0 9px #ff5500, -40px -14px 1px rgba(255, 255, 255, 0);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.644);
+        top: 452px;
+        left: -3px;
+        padding-bottom: 50%;
+        width: 57.7%;
+        transform-origin: 0 0;
+        transform: rotate(-30deg) skewX(30deg);
+        border-bottom: 3px solid rgba(255, 255, 255, 0);
+        border-left: 3px solid rgba(255, 255, 255, 0);
+        z-index: -1;
+        transition: 0.1s all ease-in-out;
+    }
+    &:hover .card_image {
+        transform: translate(0px, -15px);
+        transition: 0.2s all ease-in-out;
+        -webkit-box-shadow: 0px 12px 2px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 12px 2px -3px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 12px 2px -3px rgba(0, 0, 0, 0.75);
+    }
+    &:hover::after {
+        -webkit-box-shadow: inset 16px -16px 17px -14px rgba(240, 240, 240, 0.621);
+        -moz-box-shadow: inset 16px -16px 17px -14px rgba(240, 240, 240, 0.621);
+        box-shadow: inset 16px -16px 17px -14px rgba(240, 240, 240, 0.621);
+    }
+    .card_image {
+        width: 100%;
+    }
+    .name {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        margin-top: 25px;
+    }
+}
